@@ -11,7 +11,6 @@ var ac = {
         navigator.accelerometer.clearWatch(watchID);
     },
     listo: function(pos){
-        alert("onSuccess");
         var x = pos.x;
         var y = pos.y;
         var z = pos.z;
