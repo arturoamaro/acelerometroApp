@@ -3,14 +3,14 @@ var ac = {
     init: function(){
         alert("iniciar");
         var options = { frequency: 500 };  // Update every 3 seconds
-        var watchID = navigator.accelerometer.watchAcceleration(onSuccess, onError, options);
+        var watchID = navigator.accelerometer.watchAcceleration(ac.listo, ac.onError, options);
     },
     stop: function(){
         alert("detener");
-        var watchID = navigator.accelerometer.watchAcceleration(onSuccess, onError, options);
+        var watchID = navigator.accelerometer.watchAcceleration(listo, onError, options);
         navigator.accelerometer.clearWatch(watchID);
     },
-    onSuccess: function(pos){
+    listo: function(pos){
         alert("onSuccess");
         var x = pos.x;
         var y = pos.y;
