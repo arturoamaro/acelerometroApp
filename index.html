@@ -4,10 +4,7 @@
         <meta charset="UTF-8" />
         <title>jQTouch &beta;</title>
         <link rel="stylesheet" href="css/vanilla.css" title="jQTouch">
-		<script src="phonegap.js"></script>
-        <script src="js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="js/jqtouch.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="js/actions.js"></script>
+		
         <style type="text/css" media="screen">
             #jqt.fullscreen #home .info {
                 display: none;
@@ -63,7 +60,7 @@
                         <li><a href="#">Iniciar</a></li>
                         <li style="background:#900;"><a style="color:#fff;" href="#">Detener</a></li>
                     </ul>
-                    <h2>Detenido</h2>
+                    <h2 id="mostrarBru">Detenido</h2>
                 </div>
             </div>
             <div id="brujula">
@@ -80,5 +77,11 @@
                 </div>
             </div>
         </div>
+        <script src="phonegap.js"></script>
+        <script src="js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/jqtouch.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/actions.js"></script>
+        <script src="js/API/acelerometro.js"></script>
+        <script src="js/API/brujula.js"></script>
     </body>
 </html>
