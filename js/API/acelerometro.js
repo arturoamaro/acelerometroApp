@@ -1,12 +1,12 @@
 var ac = {
-    
+    watchID: null,
     init: function(){
         var options = { frequency: 500 };  // Update every 3 seconds
-        var watchID = navigator.accelerometer.watchAcceleration(ac.listo, ac.onError, options);
+        watchID = navigator.accelerometer.watchAcceleration(ac.listo, ac.onError, options);
     },
     stop: function(){
         alert("detener");
-        var watchID = navigator.accelerometer.watchAcceleration(ac.listo, ac.onError, options);
+        watchID = navigator.accelerometer.watchAcceleration(ac.listo, ac.onError, options);
         navigator.accelerometer.clearWatch(watchID);
     },
     listo: function(pos){
