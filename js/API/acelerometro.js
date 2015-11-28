@@ -13,7 +13,7 @@ var ac = {
     onSuccess: function(pos){
         var x = pos.x;
         var y = pos.y;
-        var z = pos.z;
+        var z = pos.z;alert("onSuccess");
         $("#mostrarBru").text("X: "+ x +" Y:"+y);
     },
     onError: function(){
