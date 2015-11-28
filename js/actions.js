@@ -6,7 +6,7 @@ var jQT = new $.jQTouch({
 var fn = {
     ready: function(){
       //document.addEventListener("deviceready",fn.ini,"false");  
-        document.addEventListener("deviceready",ac.onSuccess,"false");  
+        document.addEventListener("deviceready",fn.init,"false");  
     },
     init: function(){
         $("#acelerometro .individual li").tap(fn.acTap);
@@ -27,4 +27,4 @@ var fn = {
 };
 
 //$(fn.init);
-$(fn);
+$(fn.ready);
