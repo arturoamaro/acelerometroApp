@@ -5,8 +5,9 @@ var ac = {
         watchID = navigator.accelerometer.watchAcceleration(ac.listo, ac.onError, options);
     },
     stop: function(){
-        alert("detener");
+        
         navigator.accelerometer.clearWatch(watchID);
+        alert("detener");
     },
     listo: function(pos){
         var x = pos.x;
